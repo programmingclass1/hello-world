@@ -15,4 +15,8 @@ var thisIsADate = Date.parse("2015-10-11");
 
 var thisIsAnArrayOfInts = [10, 20, 30, 40];
 
+var arrayOfString = ["this", "that"];
+
+thisIsAnArrayOfInts[1];
+
 

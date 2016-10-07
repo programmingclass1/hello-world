@@ -18,14 +18,17 @@ console.log("logging after the function declaration.");
 
 myFunction();
 
-
+var end= 1;
 
 
 
 // ************************
 // functions with params
 
+// console.log(theThingToLog)
+
 function myFunctionWithParam(logThis) {
+    var anotherVar = 1;
     console.log("We should log the param: " + logThis);
 }
 

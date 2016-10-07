@@ -15,4 +15,3 @@ var whatWillThisBe = firstName + aNumber;
 
 
 
-
