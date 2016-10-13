@@ -51,3 +51,51 @@ function myFunctionToCallAnotherFunction() {
 
 myFunctionToCallAnotherFunction();
 
+
+
+
+// ************************
+// pass multiple parameters to functions
+
+
+function myMultiParamFunction(param1, param2) {
+    
+    console.log(param1);
+    console.log(param2);
+    
+}
+
+myMultiParamFunction("hello", "next");
+
+var var1 = "hello2";
+var var2 = "next2";
+
+myMultiParamFunction(var1, var2);
+
+
+
+
+
+// ************************
+// functions do not modify the parameters passed in if they are "value" types
+// value type variables are "passed by value"
+// (note: classes are "passed by reference". we will dig into this later.)
+
+
+function modifyParams(param1) {
+    console.log(param1);
+    param1 = 5;
+    console.log(param1);
+}
+
+var var3 = 1;
+
+// log var before passing to function
+console.log(var3);
+
+// function will log, modify and log again
+modifyParams(var3);
+
+// log here again, note that the value has not changed
+console.log(var3);
+
