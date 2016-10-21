@@ -1,26 +1,37 @@
  
-function calculateWeeklySales(sun, mon, tue, wed, thr, fri, sat) {
+function calculateWeeklySales(salesWeek) {
     
     // calculate total sales for the week
-    var totalSales = sun + mon + tue + wed + thr + fri + sat;
+    var totalSales =
+        salesWeek.sunday
+        + salesWeek.monday
+        + salesWeek.tuesday
+        + salesWeek.wednesday
+        + salesWeek.thursday
+        + salesWeek.friday
+        + salesWeek.saturday;
     
     // display total sales
     console.log(totalSales);
 }
 
 
-// declare variables for each day
-var sunday = 240;
-var monday = 100;
-var tuesday = 102;
-var wednesday = 80;
-var thursday  = 120;
-var friday = 114;
-var saturday = 400;
+// declare a single variable for the entire week
+// note: this is an example of the "json" notation
+// "json" stands for "JavaScript Object Notation"
+var salesWeek = {
+    sunday: 240,
+    monday: 100,
+    tuesday: 102,
+    wednesday: 80,
+    thursday: 120,
+    friday: 114,
+    saturday: 400,
+};
 
 
 // call function to calculate weekly sales
-calculateWeeklySales(sunday, monday, tuesday, wednesday, thursday, friday, saturday);
+calculateWeeklySales(salesWeek);
 
 var a = 1;
 
