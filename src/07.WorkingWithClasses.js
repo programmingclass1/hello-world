@@ -4,7 +4,6 @@
 // classes have "properties" and "functions" (properties are similar to variables)
 
 
-
 // here is how to create an empty class
 var myClass = {};
 

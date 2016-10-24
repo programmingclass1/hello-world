@@ -14,6 +14,6 @@ var myClass = {
         this.myVar = val;
     }
     
-}
+};
 
 module.exports = myClass;
