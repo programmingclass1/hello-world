@@ -1,6 +1,6 @@
- 
+var salesWeek = require("./salesWeek.js");
+
 function calculateWeeklySales(salesWeek) {
-    
     // calculate total sales for the week
     var totalSales =
         salesWeek.sunday
@@ -15,20 +15,13 @@ function calculateWeeklySales(salesWeek) {
     console.log(totalSales);
 }
 
-
-// declare a single variable for the entire week
-// note: this is an example of the "json" notation
-// "json" stands for "JavaScript Object Notation"
-var salesWeek = {
-    sunday: 240,
-    monday: 100,
-    tuesday: 102,
-    wednesday: 80,
-    thursday: 120,
-    friday: 114,
-    saturday: 400,
-};
-
+salesWeek.monday = 100;
+salesWeek.tuesday = 140;
+salesWeek.wednesday = 330;
+salesWeek.thursday = 260;
+salesWeek.friday = 30;
+salesWeek.saturday = 89;
+salesWeek.sunday = 223;
 
 // call function to calculate weekly sales
 calculateWeeklySales(salesWeek);
